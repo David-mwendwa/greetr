@@ -3,6 +3,23 @@
     return new Greetr.init(firstName, lastName, language);
   };
 
+  var supportedLangs = ['es', 'en'];
+
+  var greetings = {
+    en: 'Hello',
+    es: 'Hola',
+  };
+
+  var formalGreetings = {
+    en: 'Greetings',
+    es: 'saludos',
+  };
+
+  var logMessages = {
+    en: "Logged in",
+    es: "Inicio sesion"
+  }
+
   Greetr.prototype = {};
 
   Greetr.init = function (firstName, lastName, language) {
