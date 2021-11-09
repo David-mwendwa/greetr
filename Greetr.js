@@ -63,7 +63,7 @@
     },
 
     setLang: function (lang) {
-      this.validate = lang;
+      this.language = lang;
       this.validate();
       return this;
     },
