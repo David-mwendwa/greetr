@@ -113,6 +113,8 @@
     self.firstName = firstName || '';
     self.lastName = lastName || '';
     self.language = language || 'en';
+
+    self.validate()
   };
 
   // trick borrowed form jQuery so we dont have to use the 'new' keyword
