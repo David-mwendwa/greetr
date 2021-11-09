@@ -1,4 +1,4 @@
-(function (global, $) {
+;(function (global, $) {
   // 'new' an object
   var Greetr = function (firstName, lastName, language) {
     return new Greetr.init(firstName, lastName, language);
@@ -42,11 +42,11 @@
 
     // retrive messages from object by referring to properties using [] syntax
     greeting: function () {
-      return `${greetings[this.language]} ${this.firstName}!`;
+      return `${greetings[this.language]}, ${this.firstName}!`;
     },
 
     formalGreeting: function () {
-      return `${formalGreetings[this.language]} ${this.fullName()}`;
+      return `${formalGreetings[this.language]}, ${this.fullName()}`;
     },
 
     greet: function (formal) {
